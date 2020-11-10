@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nhà Sách Phương Nam"
+        android:textAlignment="center"
+        android:textSize="28sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/uc_add"
+        android:text="Add" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerSlideShow"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+
+        />
+
+
+</LinearLayout>

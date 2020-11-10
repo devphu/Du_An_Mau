@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtTitleTypeBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="monospace"
+        android:text="Tên Loại Sách "
+        android:textSize="16sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtTypeBook2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txtTitleTypeBook"
+        android:fontFamily="monospace"
+        android:hint="Loai sach"
+        android:textSize="16sp"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtTitleRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitleTypeBook"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="Phòng chứa sách"
+        android:textSize="16sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtRoomBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTypeBook2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtTitleRoom"
+        android:hint="Nhập Phòng" />
+    <TextView
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:id="@+id/txtTitleAmountTypeBook"
+        android:text="Số lượng sách"
+        android:layout_below="@+id/txtTitleRoom"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAmountTypeBook"
+        android:hint="Nhập số lượng sách"
+        android:layout_below="@+id/edtRoomBook"
+        android:layout_toRightOf="@+id/txtTitleAmountTypeBook"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTiTleAsm"
+        android:text="Asm"
+        android:layout_below="@+id/txtTitleAmountTypeBook"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAsm"
+        android:hint="Nhập số lượng sách"
+        android:layout_below="@+id/edtAmountTypeBook"
+        android:layout_toRightOf="@+id/txtTitleAmountTypeBook"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnAddDataTypeBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAsm"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnCancelTypeBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAsm"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnAddDataTypeBook"
+        android:text="Cancel" />
+</RelativeLayout>

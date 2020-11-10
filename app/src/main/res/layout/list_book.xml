@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLogoBook"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <TextView
+
+            android:id="@+id/txtNameBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imgLogoBook"
+            android:fontFamily="monospace"
+            android:hint="name book"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTypeBook1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNameBook"
+            android:layout_toRightOf="@+id/imgLogoBook"
+            android:fontFamily="sans-serif"
+            android:hint="typeBook"
+            
+            android:textSize="16sp" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPriceBook"
+            android:hint="Price Book"
+            android:layout_below="@+id/txtTypeBook1"
+            android:layout_toRightOf="@+id/imgLogoBook"
+            />
+
+<!--        <Button-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:id="@+id/btnMua"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_toRightOf="@+id/txtNameBook"-->
+<!--            android:text="Mua"-->
+
+
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/btnMua"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_toRightOf="@+id/txtNameBook"-->
+<!--            android:text="Chi Tiết" />-->
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

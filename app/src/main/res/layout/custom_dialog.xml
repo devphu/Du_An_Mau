@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/txtTitleCodeTypeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Nhập Tên Loại"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtCodeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txtTitleCodeTypeDialog"
+        android:hint="CodType"
+        android:textSize="15sp" />
+
+    <TextView
+
+        android:id="@+id/txtTitleNameBookDiaLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitleCodeTypeDialog"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="Nhập tên sách"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtNameBookDiaLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtCodeType"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/txtTitleNameBookDiaLog"
+        android:hint="NameBook"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtTitlePriceBookDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitleNameBookDiaLog"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="Nhập giá sách"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPriceBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNameBookDiaLog"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/txtTitlePriceBookDialog"
+        android:hint="PriceBok"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/txtTitleNsbDiaLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitlePriceBookDialog"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="Nhập Tên Nsb"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtNsbDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPriceBook"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/txtTitleNsbDiaLog"
+        android:hint="Nsb" />
+
+
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNsbDialog"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Add"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNsbDialog"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnAddData"
+        android:text="Cancel"
+
+        />
+</RelativeLayout>
